@@ -5,9 +5,7 @@ const PostList = () => {
 	// const [posts, setPosts] = useState<Post[]>([]);
 	// const [error, setError] = useState('');
 	const pageSize = 10;
-	const { data, error, isLoading, fetchNextPage, isFetchingNextPage } = usePost(
-		{ pageSize }
-	);
+	const { data, error, isLoading } = usePost({ pageSize });
 
 	if (isLoading) return <p>This is still Loding</p>;
 
