@@ -1,4 +1,4 @@
-import usePost from '../routing/hooks/usePost';
+import usePost from './hooks/usePost';
 import { useState } from 'react';
 
 const PostList = () => {
